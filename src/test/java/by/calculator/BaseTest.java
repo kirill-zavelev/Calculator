@@ -14,7 +14,7 @@ public class BaseTest {
 
     @AfterSuite(alwaysRun = true)
     public void tearDownAfterSuite() {
-        System.out.println("The message is displayed before suite ended");
+        System.out.println("The message is displayed after suite ended");
     }
 
     @BeforeTest

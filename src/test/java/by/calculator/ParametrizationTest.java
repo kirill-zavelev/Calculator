@@ -9,7 +9,7 @@ public class ParametrizationTest extends BaseTest {
 
     @Parameters({"a", "b", "expectedResult"})
     @Test()
-    public void checkParametrization(@Optional("a") int a, @Optional("b") int b, @Optional("expectedResult") int expectedResult) {
+    public void checkParametrization(@Optional("5") int a, @Optional("2") int b, @Optional("7") int expectedResult) {
         Assert.assertEquals(calculator.sum(a, b), expectedResult, String.format(MESSAGE, expectedResult));
     }
 }
