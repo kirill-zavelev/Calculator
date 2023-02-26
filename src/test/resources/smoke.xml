@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke" parallel="classes" thread-count="2">
+    <listeners>
+        <listener class-name="by.calculator.util.AnnotationTransformer"/>
+        <listener class-name="by.calculator.util.TestListener"/>
+    </listeners>
+    <test name="Tests for Sum">
+        <classes>
+            <class name="by.calculator.SumTest"/>
+        </classes>
+    </test>
+    <test name="Tests for Subtract">
+        <classes>
+            <class name="by.calculator.SubtractTest"/>
+        </classes>
+    </test>
+    <test name="Tests for Multiply">
+        <classes>
+            <class name="by.calculator.MultiplyTest"/>
+        </classes>
+    </test>
+    <test name="Tests for Divide">
+        <classes>
+            <class name="by.calculator.DivideTest"/>
+        </classes>
+    </test>
+</suite>
