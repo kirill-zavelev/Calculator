@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parametrization" parallel="classes" thread-count="2">
+    <listeners>
+        <listener class-name="by.calculator.util.AnnotationTransformer"/>
+        <listener class-name="by.calculator.util.TestListener"/>
+    </listeners>
+    <test name="Test with Parameter">
+        <parameter name="a" value="10"/>
+        <parameter name="b" value="15"/>
+        <parameter name="expectedResult" value="25"/>
+        <classes>
+            <class name="by.calculator.ParametrizationTest"/>
+        </classes>
+    </test>
+</suite>

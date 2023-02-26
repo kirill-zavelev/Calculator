@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression" parallel="classes" thread-count="2">
+    <listeners>
+        <listener class-name="by.calculator.util.AnnotationTransformer"/>
+        <listener class-name="by.calculator.util.TestListener"/>
+    </listeners>
+    <test name="Tests for Remainder">
+        <classes>
+            <class name="by.calculator.RemainderTest"/>
+        </classes>
+    </test>
+    <test name="Tests for Root">
+        <classes>
+            <class name="by.calculator.RootTest"/>
+        </classes>
+    </test>
+</suite>
