@@ -4,7 +4,7 @@ import org.testng.annotations.*;
 
 public class BaseTest {
 
-    protected static final String MESSAGE = "Result should be equals to %s";
+    protected static final String MESSAGE = "Result should equals to %s";
     protected Calculator calculator;
 
     @BeforeSuite
